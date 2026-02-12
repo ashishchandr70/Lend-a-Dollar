@@ -199,4 +199,4 @@ We do not pretend to have perfect answers — this project is about **building t
 
 Lend-a-Dollar exists to answer one simple question:
 
-> *What if borrowing didn’t have to be humiliating, predatory, or life-destroying?*
+> *What if borrowing didn’t have to be humiliating, sourced from a predatory lender, or life-destroying?*
