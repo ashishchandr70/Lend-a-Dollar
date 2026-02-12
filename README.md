@@ -156,6 +156,46 @@ This is an experimental project and **not live financial infrastructure**.
 
 ---
 
+## Ethics & Design Principles
+
+Lend-a-Dollar is intentionally designed as the ethical opposite of predatory lending.
+
+Predatory lending profits from desperation. This project exists to reduce harm during moments of crisis through shared risk, low-cost capital, transparency, and dignity-preserving design.
+
+### Ethical Commitments
+
+**1. No Debt Traps**  
+Loans are designed for exit and recovery, not for indefinite rollover or entrapment.
+
+**2. Low, Transparent Cost of Capital**  
+Interest (if any) is low and may be inflation-linked.  
+All terms are clear, simple, and visible to borrowers and lenders.
+
+**3. No Coercive Collections**  
+There are no harassment-based collection practices.  
+Write-offs are an accepted part of compassionate risk-sharing.
+
+**4. Borrower Dignity First**  
+Borrowers are treated as humans in temporary crisis — not revenue streams.
+
+**5. Aligned Incentives**  
+The platform and lenders benefit when borrowers succeed and stabilize.  
+Failure is not a profit center.
+
+**6. Community Risk-Sharing**  
+Loans are micro-syndicated so no single lender bears meaningful financial harm.
+
+**7. Radical Transparency**  
+Loan terms, pool health, write-offs, and platform mechanics are visible and auditable.
+
+**8. Continuous Ethical Review**  
+If incentives drift toward extractive behavior, the design must change — even if that reduces revenue or growth.
+
+> If this platform ever begins to resemble the predatory systems it aims to replace, it should be paused and redesigned.
+
+
+---
+
 ## Success Metrics
 
 Success is defined by **human outcomes**, not platform growth alone:
