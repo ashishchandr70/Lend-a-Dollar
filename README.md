@@ -196,6 +196,20 @@ If incentives drift toward extractive behavior, the design must change — even 
 
 ---
 
+## Real-World Context
+
+This project is about people first, systems second.
+
+To understand the human impact of predatory lending — and how Lend-a-Dollar is designed to reduce harm — read the stories here:
+
+
+👉 [STORIES.md](./STORIES.md)
+
+These anonymized, composite scenarios illustrate why this project exists.
+
+
+---
+
 ## Success Metrics
 
 Success is defined by **human outcomes**, not platform growth alone:
