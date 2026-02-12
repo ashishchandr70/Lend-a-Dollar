@@ -7,42 +7,8 @@ It is not an implementation plan and does not imply production readiness.
 
 ## High-Level Architecture (Both Lenders and Borrowers Use the App)
 
-                ┌──────────────────────────────┐
-                │        Web / Mobile App      │
-                │  (Lender + Borrower UI/UX)   │
-                └──────────────┬───────────────┘
-                               │
-                               ▼
-                ┌──────────────────────────────┐
-                │       Platform API Layer     │
-                │ (orchestrates workflows)     │
-                └──────────────┬───────────────┘
-                               │
-     ┌─────────────────────────┼─────────────────────────┐
-     │                         │                         │
-     ▼                         ▼                         ▼
-┌───────────────┐     ┌─────────────────┐      ┌───────────────────┐
-│ Identity & KYC │     │ AI Underwriting │      │ Fraud / Abuse     │
-│ (US-only)      │     │ + Doc Review    │      │ Detection         │
-└──────┬────────┘     └───────┬─────────┘      └─────────┬─────────┘
-       │                      │                            │
-       └──────────────┬───────┴──────────────┬─────────────┘
-                      │                      │
-                      ▼                      ▼
-          ┌──────────────────────┐  ┌──────────────────────┐
-          │ Governance Module     │  │ Transparency Dashboard │
-          │ (rules + voting)     │  │ (audit + reporting)    │
-          └───────────┬──────────┘  └───────────┬───────────┘
-                      │                         │
-                      └──────────────┬──────────┘
-                                     ▼
-                       ┌─────────────────────────┐
-                       │     Blockchain Layer    │
-                       │ - Stablecoin Pool       │
-                       │ - Loan Escrow           │
-                       │ - Repayment Tracking    │
-                       │ - Write-offs (recorded) │
-                       └─────────────────────────┘
+![Lend-a-Dollar Architecture Diagram](architecture.png)
+
 
 
 ## User Flows (Simplified)
@@ -51,7 +17,7 @@ It is not an implementation plan and does not imply production readiness.
 Lender → App → Identity Verification → Deposit to Pool (stablecoins) → Optional governance → Track impact/returns
 
 ### Borrower Flow
-Borrower → App → Identity Verification → Submit docs → AI-assisted underwriting (+ manual override) → Loan disbursement → Repayment → (Possible write-off)
+Borrower → App → Identity Verification → Submit docs → AI-assisted underwriting (+ manual override) → Loan disbursement → Repayment
 
 ---
 
