@@ -15,7 +15,14 @@ This project was inspired by personal experience with job loss and financial har
 This is not meant to “fix” systemic inequality. It is a **band-aid solution** for moments of crisis — eviction risk, short-term cash flow emergencies, and unexpected life events.
 
 ---
+## Borrower Dignity is a Core Requirement
 
+Lend-a-Dollar is designed around borrower dignity as a non-negotiable constraint.
+
+📜 Read the principles that govern all product decisions:  
+👉 [Principles for Borrower Dignity](./PRINCIPLES_FOR_BORROWER_DIGNITY.md)
+
+---
 ## What This Is
 
 - A micro-syndicated lending platform  
