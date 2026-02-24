@@ -88,3 +88,28 @@ Lend-a-Dollar sustains itself via:
 - Optional lender services and ethical partnerships (later).
 
 **Borrower principal is ring-fenced. Only yield funds ops and the resilience reserve.**
+
+---
+
+# Lend-a-Dollar — Sustainability FAQ
+
+### Are borrowers being shortchanged if 20–30% of lender funds go to yield strategies?
+No. That portion belongs to lenders and is allocated by lender choice. Borrower principal (70–80%) is ring-fenced and never used for platform ops. The yield sleeve exists to fund operations without charging borrowers.
+
+### Does the platform take lender capital?
+No. The platform never takes principal. Only **yield** (returns generated) is used for ops, lender incentives, and the resilience reserve. Yield sleeve capital remains lender-owned and withdrawable.
+
+### Why not deploy 100% to lending?
+Without a sustainability layer, the platform would need borrower fees or extractive practices to survive. The yield sleeve is a transparent way to keep the platform alive **without taxing borrowers**.
+
+### Can lenders choose their allocation?
+Yes. Lenders choose their mix within guardrails (e.g., minimum 70% to lending). Example profiles: Conservative (90/10), Balanced (75/25), Platform-supporter (70/30).
+
+### What is the resilience reserve?
+A yield-funded buffer to absorb write-offs and shocks so borrowers aren’t pressured and collections aren’t coercive. The reserve has a public target and a cap.
+
+### Does ops funding affect underwriting?
+No. Governance and technical guardrails prevent ops funding needs from influencing underwriting decisions.
+
+### What happens in early phases before yield is meaningful?
+Operations are funded primarily by **grants/philanthropy**. Yield contributes modestly until scale is reached.
