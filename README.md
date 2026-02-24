@@ -79,7 +79,14 @@ The philosophical question for lenders is:
 - The goal is to minimize bias while ensuring real need  
 
 ---
+## Platform Sustainability (How Lend-a-Dollar Is Funded)
 
+Lend-a-Dollar is designed so that the platform never profits from borrower distress.  
+In early phases, development and pilots are funded through grants. Over time, platform operations are sustained through a small, transparent share of yield generated from pooled funds and optional services for lenders — not borrower-facing fees. The platform does not monetize defaults, collections, or borrower hardship.  
+
+➡️ See the full sustainability model here: [SUSTAINABILITY_MODEL.md](./SUSTAINABILITY_MODEL.md)
+
+---
 ## Where Funds Live
 
 - Funds are held in stablecoins  
