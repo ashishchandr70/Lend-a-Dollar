@@ -135,6 +135,15 @@ The goal is **modest yield + social impact**, not speculative DeFi gambling.
 
 ---
 
+## Platform Sustainability
+
+Lend-a-Dollar ring-fences borrower principal. Typically, 70–80% of lender funds are deployed directly into lending, while 20–30% (with lender consent) may be allocated to transparent yield strategies. Only the **yield** (not principal) funds platform operations, lender incentives, and a resilience reserve — preventing borrower fees and extractive practices.
+
+➡️ See details: [SUSTAINABILITY_MODEL.md](./SUSTAINABILITY_MODEL.md)  
+➡️ Common questions: [Sustainability FAQ](./SUSTAINABILITY_MODEL.md#lend-a-dollar--sustainability-faq)
+
+---
+
 ## Governance
 
 The long-term vision is community governance:
