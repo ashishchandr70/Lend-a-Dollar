@@ -79,14 +79,23 @@ The philosophical question for lenders is:
 - The goal is to minimize bias while ensuring real need  
 
 ---
+
 ## Platform Sustainability (How Lend-a-Dollar Is Funded)
 
 Lend-a-Dollar is designed so that the platform never profits from borrower distress.  
+
 In early phases, development and pilots are funded through grants. Over time, platform operations are sustained through a small, transparent share of yield generated from pooled funds and optional services for lenders — not borrower-facing fees. The platform does not monetize defaults, collections, or borrower hardship.  
 
-➡️ See the full sustainability model here: [SUSTAINABILITY_MODEL.md](./SUSTAINABILITY_MODEL.md)
+Lend-A-Dollar ring-fences borrower principal. Typically, 70–80% of lender funds are deployed directly into lending, while 20–30% (with lender consent) may be allocated to transparent yield strategies. Only the **yield** (not principal) funds platform operations, lender incentives, and a resilience reserve — preventing borrower fees and extractive practices.
+
+**Borrower interest is inflation-linked and 100% recycled into the lending pool** to support future borrowers. Borrower principal and borrower interest are never used to fund platform operations.
+
+
+➡️ See details: [SUSTAINABILITY_MODEL.md](./SUSTAINABILITY_MODEL.md)  
+➡️ Common questions: [Sustainability FAQ](./SUSTAINABILITY_MODEL.md#lend-a-dollar--sustainability-faq)
 
 ---
+
 ## Where Funds Live
 
 - Funds are held in stablecoins  
@@ -132,15 +141,6 @@ Lending is primarily altruistic — but aligned incentives help sustainability:
 - Higher-risk strategies reduce participation and will be optional or excluded  
 
 The goal is **modest yield + social impact**, not speculative DeFi gambling.
-
----
-
-## Platform Sustainability
-
-Lend-a-Dollar ring-fences borrower principal. Typically, 70–80% of lender funds are deployed directly into lending, while 20–30% (with lender consent) may be allocated to transparent yield strategies. Only the **yield** (not principal) funds platform operations, lender incentives, and a resilience reserve — preventing borrower fees and extractive practices.
-
-➡️ See details: [SUSTAINABILITY_MODEL.md](./SUSTAINABILITY_MODEL.md)  
-➡️ Common questions: [Sustainability FAQ](./SUSTAINABILITY_MODEL.md#lend-a-dollar--sustainability-faq)
 
 ---
 
