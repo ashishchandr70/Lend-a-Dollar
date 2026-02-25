@@ -250,6 +250,23 @@ Success is defined by **human outcomes**, not platform growth alone:
 This project is currently **conceptual and exploratory**.  
 The README reflects design intent, not a finished product.
 
+---
+## MVP (No-Money) App
+
+A functional, no-money MVP is available in `app/`. It simulates borrower,
+lender, admin, governance, and transparency flows with synthetic data.
+
+### Run locally
+
+```bash
+cd app
+npm install
+npm run dev
+```
+
+This prototype does **not** touch real funds, real identities, or production
+compliance workflows. It exists to pressure-test UX and ethical design.
+
 Contributors interested in:
 - Ethical fintech  
 - Microfinance  
