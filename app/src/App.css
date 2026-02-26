@@ -1,10 +1,10 @@
 .app {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 32px 24px 80px;
+  padding: 36px 24px 90px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 26px;
 }
 
 .header {
@@ -12,21 +12,22 @@
   justify-content: space-between;
   align-items: flex-end;
   gap: 16px;
-  border-bottom: 1px solid #e6e8ee;
-  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(20, 33, 61, 0.08);
+  padding-bottom: 18px;
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
+  color: #0f172a;
 }
 
 .eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.75rem;
-  color: #5a6175;
-  margin-bottom: 4px;
+  letter-spacing: 0.16em;
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-bottom: 6px;
 }
 
 .badge-row {
@@ -36,9 +37,9 @@
 }
 
 .badge {
-  background: #f1f3f9;
-  color: #2a3553;
-  padding: 6px 10px;
+  background: #e8efff;
+  color: #1e3a8a;
+  padding: 6px 12px;
   border-radius: 999px;
   font-size: 0.75rem;
   font-weight: 600;
@@ -48,21 +49,27 @@
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px -20px rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 .nav button {
-  background: #f7f8fb;
-  border: 1px solid #e2e6ef;
+  background: transparent;
+  border: 1px solid transparent;
   padding: 8px 14px;
   border-radius: 10px;
   font-weight: 600;
-  color: #2b3248;
+  color: #334155;
 }
 
 .nav button.active {
-  background: #1f2a44;
+  background: #1e3a8a;
   color: #fff;
-  border-color: #1f2a44;
+  border-color: #1e3a8a;
+  box-shadow: 0 10px 20px -15px rgba(30, 58, 138, 0.6);
 }
 
 .section {
@@ -86,18 +93,43 @@
 }
 
 .hero-card {
-  background: #0f172a;
+  background: linear-gradient(140deg, #0f172a 0%, #1e293b 70%, #1f2a44 100%);
   color: #f8fafc;
-  padding: 24px;
-  border-radius: 16px;
+  padding: 26px;
+  border-radius: 18px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  box-shadow: 0 22px 40px -30px rgba(15, 23, 42, 0.7);
+}
+
+.hero-card .metric-label {
+  color: rgba(248, 250, 252, 0.72);
+}
+
+.hero-card .metric-value {
+  color: #f8fafc;
+}
+
+.hero-card h3 {
+  color: #f8fafc;
+}
+
+.hero-card p {
+  color: #e2e8f0;
+}
+
+.hero-card .metric-label {
+  color: #cbd5f5;
+}
+
+.hero-card .metric-value {
+  color: #ffffff;
 }
 
 .lead {
   font-size: 1.05rem;
-  color: #3c4661;
+  color: #475569;
 }
 
 .pill-row {
@@ -108,11 +140,12 @@
 }
 
 .pill {
-  background: #e8ecf8;
-  color: #233155;
+  background: #e8efff;
+  color: #1e3a8a;
   padding: 6px 12px;
   border-radius: 12px;
   font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .grid {
@@ -130,10 +163,10 @@
 
 .card {
   background: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 14px 30px -22px rgba(15, 23, 42, 0.3);
-  border: 1px solid #eef1f7;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 0 20px 40px -30px rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.2);
   display: flex;
   flex-direction: column;
   gap: 14px;
@@ -141,6 +174,7 @@
 
 .card.note {
   background: #f8fafc;
+  border-style: dashed;
 }
 
 .status {
@@ -190,12 +224,13 @@
 
 .metric-label {
   font-size: 0.75rem;
-  color: #6b7280;
+  color: #64748b;
 }
 
 .metric-value {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   font-weight: 700;
+  color: #0f172a;
 }
 
 .form-grid {
@@ -212,17 +247,18 @@ label {
   flex-direction: column;
   gap: 6px;
   font-weight: 600;
-  color: #2f374f;
+  color: #1e293b;
 }
 
 input,
 select,
 textarea {
   padding: 10px 12px;
-  border-radius: 10px;
-  border: 1px solid #d7dce8;
+  border-radius: 12px;
+  border: 1px solid #d5dbe7;
   font-size: 0.95rem;
   font-family: inherit;
+  background: #f8fafc;
 }
 
 textarea {
@@ -231,7 +267,7 @@ textarea {
 
 button {
   padding: 10px 14px;
-  border-radius: 10px;
+  border-radius: 12px;
   border: 1px solid #c8d0e0;
   background: #f7f8fb;
   font-weight: 600;
@@ -239,15 +275,16 @@ button {
 }
 
 button.primary {
-  background: #1f2a44;
+  background: #1e3a8a;
   color: #fff;
-  border-color: #1f2a44;
+  border-color: #1e3a8a;
+  box-shadow: 0 12px 20px -16px rgba(30, 58, 138, 0.7);
 }
 
 button.danger {
-  background: #c81e1e;
+  background: #b91c1c;
   color: #fff;
-  border-color: #c81e1e;
+  border-color: #b91c1c;
 }
 
 button:disabled {
@@ -264,9 +301,9 @@ button:disabled {
 .item {
   display: grid;
   gap: 8px;
-  padding: 12px;
-  border-radius: 12px;
-  border: 1px solid #edf0f7;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
   background: #fbfcff;
 }
 
@@ -308,8 +345,17 @@ button:disabled {
   background: #fef3c7;
   color: #7c4a03;
   padding: 8px 10px;
-  border-radius: 8px;
+  border-radius: 10px;
   font-size: 0.85rem;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  color: #0f172a;
+}
+
+.hero .lead {
+  margin-top: 10px;
 }
 
 ul {

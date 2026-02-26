@@ -97,6 +97,10 @@ function App() {
     const portfolioOutstandingRate = portfolioPrincipal
       ? portfolioBalance / portfolioPrincipal
       : 0.85
+    const portfolioRepaymentRate = Math.max(
+      0,
+      1 - portfolioOutstandingRate - portfolioDefaultRate / 100,
+    )
     const totalContributions = Math.max(0, scenario.totalContributions)
     const availableToBorrow = (totalContributions * LENDING_ALLOCATION) / 100
     const yieldSleeve = (totalContributions * YIELD_ALLOCATION) / 100
@@ -108,6 +112,14 @@ function App() {
     const platformOps = yieldIncome * 0.5
     const lenderIncentives = yieldIncome * 0.3
     const resilienceReserve = yieldIncome * 0.2
+    const lenderTotalLending =
+      (state.lender.totalDeposits * LENDING_ALLOCATION) / 100
+    const lenderWriteoffShare = lenderTotalLending * (defaultRate / 100)
+    const lenderRepayments = lenderTotalLending * portfolioRepaymentRate
+    const lenderCurrentBalance = Math.max(
+      0,
+      lenderTotalLending - lenderWriteoffShare - lenderRepayments,
+    )
 
     return {
       totalLoans,
@@ -123,6 +135,10 @@ function App() {
       platformOps,
       lenderIncentives,
       resilienceReserve,
+      lenderTotalLending,
+      lenderWriteoffShare,
+      lenderRepayments,
+      lenderCurrentBalance,
     }
   }, [scenario.borrowedRate, scenario.totalContributions, state])
 
@@ -681,41 +697,43 @@ function App() {
         </div>
 
         <div className="card">
-          <h3>Exposure & Impact</h3>
+          <h3>Lender Snapshot</h3>
           <div className="metric-grid">
             <div>
-              <p className="metric-label">Total deposits</p>
+              <p className="metric-label">Lender since</p>
               <p className="metric-value">
-                {formatCurrency(state.lender.totalDeposits)}
+                {new Date(state.lender.since).toLocaleDateString()}
               </p>
             </div>
             <div>
-              <p className="metric-label">Available to borrow (70%)</p>
+              <p className="metric-label">Total lending to date</p>
               <p className="metric-value">
-                {formatCurrency(stats.availableToBorrow)}
+                {formatCurrency(stats.lenderTotalLending)}
               </p>
             </div>
             <div>
-              <p className="metric-label">Yield sleeve</p>
-              <p className="metric-value">{formatCurrency(stats.yieldSleeve)}</p>
-            </div>
-            <div>
-              <p className="metric-label">Active exposure</p>
+              <p className="metric-label">Current lending balance</p>
               <p className="metric-value">
-                {formatCurrency(
-                  Math.min(
-                    state.lender.maxExposure,
-                    stats.activeLoans.reduce((sum, loan) => sum + loan.balance, 0),
-                  ),
-                )}
+                {formatCurrency(stats.lenderCurrentBalance)}
               </p>
             </div>
           </div>
           <div className="card note">
-            <p>
-              Your exposure is capped at {formatCurrency(state.lender.maxExposure)}.
-              Losses are shared across the pool to protect any single lender.
-            </p>
+            <p className="metric-label">Lender share breakdown</p>
+            <div className="metric-grid">
+              <div>
+                <p className="metric-label">Write-offs</p>
+                <p className="metric-value">
+                  {formatCurrency(stats.lenderWriteoffShare)}
+                </p>
+              </div>
+              <div>
+                <p className="metric-label">Repayments returned</p>
+                <p className="metric-value">
+                  {formatCurrency(stats.lenderRepayments)}
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -119,6 +119,7 @@ export const createDefaultState = (): AppState => {
     ],
     lender: {
       name: 'Sample Lender',
+      since: now,
       monthlyContribution: 10,
       totalDeposits: 120,
       lendingAllocation: 70,

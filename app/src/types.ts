@@ -35,6 +35,7 @@ export interface Loan {
 
 export interface LenderState {
   name: string
+  since: string
   monthlyContribution: number
   totalDeposits: number
   lendingAllocation: number

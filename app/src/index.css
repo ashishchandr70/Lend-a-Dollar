@@ -1,9 +1,10 @@
 :root {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
   line-height: 1.5;
   font-weight: 400;
   color: #101828;
-  background-color: #f7f8fb;
+  background-color: #f4f6fb;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -18,7 +19,11 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: #f7f8fb;
+  background: radial-gradient(circle at top, #f7f9ff 0%, #eef2f8 45%, #edf1f6 100%);
+}
+
+a {
+  color: inherit;
 }
 
 p {
