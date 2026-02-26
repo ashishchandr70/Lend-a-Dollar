@@ -359,7 +359,13 @@ function App() {
             <span className="pill">Human override</span>
             <span className="pill">Transparency-first</span>
           </div>
+          <a className="infographic-link" href="/lad-poster-portrait.png" target="_blank" rel="noreferrer">
+            View How It Works Infographic →
+          </a>
         </div>
+      </div>
+
+      <div className="grid two">
         <div className="hero-card">
           <h3>Live Snapshot</h3>
           <div className="metric-grid">
@@ -380,11 +386,11 @@ function App() {
               <p className="metric-value">{formatCurrency(stats.yieldSleeve)}</p>
             </div>
             <div>
-              <p className="metric-label">Outstanding balance</p>
+              <p className="metric-label">Current outstanding</p>
               <p className="metric-value">{formatCurrency(stats.totalBalance)}</p>
             </div>
             <div>
-              <p className="metric-label">Total borrowed</p>
+              <p className="metric-label">Total issued (to date)</p>
               <p className="metric-value">{formatCurrency(stats.totalPrincipal)}</p>
             </div>
             <div>
@@ -393,9 +399,6 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="grid two">
         <div className="card">
           <h3>Scenario Inputs</h3>
           <label>
@@ -413,7 +416,7 @@ function App() {
             />
           </label>
           <label>
-            Total borrowed (% of available)
+            Total issued (% of available)
             <input
               type="number"
               min={0}
@@ -905,9 +908,9 @@ function App() {
         </div>
         <div className="card">
           <h3>Borrowing</h3>
-          <p className="metric-label">Total borrowed</p>
+          <p className="metric-label">Total issued (to date)</p>
           <p className="metric-value">{formatCurrency(stats.totalPrincipal)}</p>
-          <p className="metric-label">Outstanding balance</p>
+          <p className="metric-label">Current outstanding</p>
           <p className="metric-value">{formatCurrency(stats.totalBalance)}</p>
         </div>
         <div className="card">
@@ -948,7 +951,7 @@ function App() {
             />
           </label>
           <label>
-            Total borrowed (% of available)
+            Total issued (% of available)
             <input
               type="number"
               min={0}

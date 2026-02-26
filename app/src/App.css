@@ -87,9 +87,9 @@
 
 .hero {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
 }
 
 .hero-card {
@@ -356,6 +356,20 @@ button:disabled {
 
 .hero .lead {
   margin-top: 10px;
+}
+
+.infographic-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  font-weight: 600;
+  color: #1e3a8a;
+  text-decoration: none;
+}
+
+.infographic-link:hover {
+  text-decoration: underline;
 }
 
 ul {
