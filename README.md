@@ -1,6 +1,8 @@
 
 # Lend-a-Dollar
 
+![Lend-a-Dollar poster](./assets/lend-a-dollar-poster.png)
+
 ## Vision
 
 **Lend-a-Dollar** is an experimental, community-driven micro-lending platform designed to help people in short-term financial distress avoid predatory lenders (e.g., payday loans).
