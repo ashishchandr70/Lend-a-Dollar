@@ -200,7 +200,7 @@ function App() {
 
   const handleAppeal = (applicationId: string, note: string) => {
     updateState((prev) => {
-      const updated = prev.applications.map((app) =>
+      const updated: BorrowerApplication[] = prev.applications.map((app) =>
         app.id === applicationId
           ? { ...app, status: 'appealed', appealNote: note }
           : app,
@@ -219,9 +219,12 @@ function App() {
     })
   }
 
-  const handleAdminDecision = (applicationId: string, status: 'approved' | 'denied') => {
+  const handleAdminDecision = (
+    applicationId: string,
+    status: 'approved' | 'denied',
+  ) => {
     updateState((prev) => {
-      const applications = prev.applications.map((app) =>
+      const applications: BorrowerApplication[] = prev.applications.map((app) =>
         app.id === applicationId ? { ...app, status } : app,
       )
 
@@ -248,11 +251,11 @@ function App() {
 
   const handleWriteOff = (loanId: string) => {
     updateState((prev) => {
-      const loans = prev.loans.map((loan) =>
+      const loans: Loan[] = prev.loans.map((loan) =>
         loan.id === loanId ? { ...loan, balance: 0, status: 'written-off' } : loan,
       )
       const loan = prev.loans.find((item) => item.id === loanId)
-      const applications = loan
+      const applications: BorrowerApplication[] = loan
         ? prev.applications.map((app) =>
             app.id === loan.applicationId ? { ...app, status: 'written-off' } : app,
           )
@@ -269,7 +272,7 @@ function App() {
 
   const handlePayment = (loanId: string) => {
     updateState((prev) => {
-      const loans = prev.loans.map((loan) => {
+      const loans: Loan[] = prev.loans.map((loan) => {
         if (loan.id !== loanId || loan.status !== 'active') return loan
         const nextBalance = Math.max(0, loan.balance - loan.monthlyPayment)
         return {
